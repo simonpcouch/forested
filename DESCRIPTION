@@ -1,0 +1,30 @@
+Package: forested
+Title: Forest Attributes in Washington State
+Version: 0.0.0.9000
+Authors@R: c(
+    person("Grayson", "White", , "graysonwhite13@gmail.com", role = "aut",
+           comment = c(ORCID = "0000-0003-4993-2792")),
+    person("Hannah", "Frick", , "hannah@posit.co", role = "aut",
+           comment = c(ORCID = "0000-0002-6049-5258")),
+    person("Simon", "Couch", , "simon.couch@posit.co", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5676-5107")),
+    person(given = "Posit Software, PBC", role = "fnd")
+  ) 
+Description: A small subset of plots in Washington State are sampled and 
+     assessed "on-the-ground" as forested or non-forested by the U.S. 
+     Department of Agriculture, Forest Service, Forest Inventory and Analysis
+     (FIA) Program, but the FIA also has access to remotely sensed data for 
+     all land in the state. The forested package contains a data frame by the
+     same name from which we can develop a model based on the more 
+     easily-accessible remotely sensed data to predict whether a plot is 
+     forested or non-forested.
+License: MIT + file LICENSE
+Suggests: 
+    knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends: 
+    R (>= 2.10)
+LazyData: true
