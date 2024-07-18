@@ -7,6 +7,14 @@
 \description{
 A small subset of plots in Washington State are sampled and assessed "on-the-ground" as forested or non-forested by the U.S. Department of Agriculture, Forest Service, Forest Inventory and Analysis (FIA) Program, but the FIA also has access to remotely sensed data for all land in the state. The forested package contains a data frame by the same name from which we can develop a model based on the more easily-accessible remotely sensed data to predict whether a plot is forested or non-forested.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/simonpcouch/forested}
+  \item Report bugs at \url{https://github.com/simonpcouch/forested/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Simon Couch \email{simon.couch@posit.co} (\href{https://orcid.org/0000-0001-5676-5107}{ORCID})
 
