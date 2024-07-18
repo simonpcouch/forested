@@ -12,7 +12,7 @@ forested <-
   mutate(
     forested = if_else(forested == 1, "Yes", "No"),
     tree_no_tree = if_else(tree_no_tree == 2, "Yes", "No"),
-    worldcover = as.factor(worldcover_3cl),
+    land_type = as.factor(worldcover_3cl),
     across(where(is.character), as.factor),
     across(where(is.integer), as.numeric)
   ) %>%
