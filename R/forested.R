@@ -26,7 +26,8 @@
 #'   \item{eastness}{Transformed aspect degrees to eastness (-100 to 100).}
 #'   \item{northness}{Transformed aspect degrees to northness (-100 to 100).}
 #'   \item{roughness}{Degree of irregularity of the plot.}
-#'   \item{tree_no_tree}{LANDFIRE tree/non-tree lifeform mask, as a factor.}
+#'   \item{tree_no_tree}{LANDFIRE tree/non-tree lifeform mask, as a factor
+#'     with levels `"Tree"` and `"No tree"`.}
 #'   \item{dew_temp}{Mean annual dewpoint temperature (1991-2020), in degrees
 #'     C x 100.}
 #'   \item{annual_precip}{Mean annual precipitation (1991-2020), in mm × 100.}
