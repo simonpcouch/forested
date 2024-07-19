@@ -31,7 +31,7 @@ library(tibble)
 library(forested)
 
 forested
-#> # A tibble: 7,109 × 19
+#> # A tibble: 7,107 × 19
 #>    forested  year elevation eastness northness roughness tree_no_tree dew_temp
 #>    <fct>    <dbl>     <dbl>    <dbl>     <dbl>     <dbl> <fct>           <dbl>
 #>  1 Yes       2005       881       90        43        63 Tree                4
@@ -44,7 +44,7 @@ forested
 #>  8 Yes       2005       224      -65       -75         9 Tree              639
 #>  9 Yes       2005        52      -62        78        42 Tree              650
 #> 10 Yes       2005      2240      -67       -74        99 No tree          -563
-#> # ℹ 7,099 more rows
+#> # ℹ 7,097 more rows
 #> # ℹ 11 more variables: precip_annual <dbl>, temp_annual_mean <dbl>,
 #> #   temp_annual_min <dbl>, temp_annual_max <dbl>, temp_january_min <dbl>,
 #> #   vapor_min <dbl>, vapor_max <dbl>, canopy_cover <dbl>, lon <dbl>, lat <dbl>,

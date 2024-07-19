@@ -5,7 +5,7 @@
 \alias{forested}
 \title{Forest Attributes in Washington State}
 \format{
-A data frame with 7,109 rows and 19 columns:
+A data frame with 7,107 rows and 19 columns:
 
 \describe{
 \item{forested}{Whether the plot is classified as "forested" or not,

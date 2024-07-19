@@ -43,6 +43,7 @@ forested <-
   relocate(dew_temp, .before = precip_annual) %>%
   relocate(temp_annual_mean, .before = temp_annual_max) %>%
   relocate(temp_annual_max, .after = temp_annual_min) %>%
-  relocate(vapor_max, .after = vapor_min)
+  relocate(vapor_max, .after = vapor_min) %>%
+  filter(!is.na(land_type))
 
 usethis::use_data(forested, overwrite = TRUE)
