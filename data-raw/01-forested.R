@@ -13,7 +13,12 @@ forested <-
     forested = if_else(forested == 1, "Yes", "No"),
     forested = factor(forested, levels = c("Yes", "No")),
     tree_no_tree = if_else(tree_no_tree == 2, "Tree", "No tree"),
-    land_type = as.factor(worldcover_3cl),
+    land_type = case_when(
+      worldcover_3cl == 1 ~ "Tree",
+      worldcover_3cl == 2 ~ "Non-tree vegetation",
+      worldcover_3cl == 3 ~ "Barren"
+    ),
+    land_type = as.factor(land_type),
     across(where(is.character), as.factor),
     across(where(is.integer), as.numeric)
   ) %>%

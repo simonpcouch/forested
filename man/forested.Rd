@@ -35,7 +35,8 @@ deficit (1991-2020), in Pa x 100.}
 \item{lon, lat}{The longitude and latitude of the center of the plot
 with a slight perturbation.}
 \item{land_type}{Land cover type from European Space Agency (ESA) 2020
-WorldCover global land cover product, as a factor.}
+WorldCover global land cover product, as a factor with levels
+\code{"Tree"}, \code{"Non-tree vegetation"}, and \code{"Barren"}.}
 }
 }
 \source{

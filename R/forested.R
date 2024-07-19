@@ -44,7 +44,8 @@
 #'   \item{lon, lat}{The longitude and latitude of the center of the plot
 #'     with a slight perturbation.}
 #'   \item{land_type}{Land cover type from European Space Agency (ESA) 2020
-#'     WorldCover global land cover product, as a factor.}
+#'     WorldCover global land cover product, as a factor with levels
+#'     `"Tree"`, `"Non-tree vegetation"`, and `"Barren"`.}
 #' }
 #'
 #' @source
