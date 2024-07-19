@@ -11,6 +11,7 @@ forested <-
   clean_names() %>%
   mutate(
     forested = if_else(forested == 1, "Yes", "No"),
+    forested = factor(forested, levels = c("Yes", "No")),
     tree_no_tree = if_else(tree_no_tree == 2, "Tree", "No tree"),
     land_type = as.factor(worldcover_3cl),
     across(where(is.character), as.factor),
