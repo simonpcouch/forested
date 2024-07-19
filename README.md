@@ -34,16 +34,16 @@ forested
 #> # A tibble: 7,109 × 19
 #>    forested  year elevation eastness northness roughness tree_no_tree dew_temp
 #>    <fct>    <dbl>     <dbl>    <dbl>     <dbl>     <dbl> <fct>           <dbl>
-#>  1 Yes       2005       881       90        43        63 No tree             4
-#>  2 Yes       2005       113      -25        96        30 No tree           640
-#>  3 No        2005       164      -84        53        13 No tree           606
-#>  4 Yes       2005       299       93        34         6 Tree              443
-#>  5 Yes       2005       806       47       -88        35 No tree           106
-#>  6 Yes       2005       736      -27       -96        53 No tree           135
-#>  7 Yes       2005       636      -48        87         3 Tree              142
-#>  8 Yes       2005       224      -65       -75         9 No tree           639
-#>  9 Yes       2005        52      -62        78        42 No tree           650
-#> 10 Yes       2005      2240      -67       -74        99 Tree             -563
+#>  1 Yes       2005       881       90        43        63 Tree                4
+#>  2 Yes       2005       113      -25        96        30 Tree              640
+#>  3 No        2005       164      -84        53        13 Tree              606
+#>  4 Yes       2005       299       93        34         6 No tree           443
+#>  5 Yes       2005       806       47       -88        35 Tree              106
+#>  6 Yes       2005       736      -27       -96        53 Tree              135
+#>  7 Yes       2005       636      -48        87         3 No tree           142
+#>  8 Yes       2005       224      -65       -75         9 Tree              639
+#>  9 Yes       2005        52      -62        78        42 Tree              650
+#> 10 Yes       2005      2240      -67       -74        99 No tree          -563
 #> # ℹ 7,099 more rows
 #> # ℹ 11 more variables: precip_annual <dbl>, temp_annual_mean <dbl>,
 #> #   temp_annual_min <dbl>, temp_annual_max <dbl>, temp_january_min <dbl>,

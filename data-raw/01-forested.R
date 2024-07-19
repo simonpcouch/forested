@@ -12,7 +12,8 @@ forested <-
   mutate(
     forested = if_else(forested == 1, "Yes", "No"),
     forested = factor(forested, levels = c("Yes", "No")),
-    tree_no_tree = if_else(tree_no_tree == 2, "Tree", "No tree"),
+    tree_no_tree = if_else(tree_no_tree == 1, "Tree", "No tree"),
+    tree_no_tree = factor(tree_no_tree, levels = c("Tree", "No tree")),
     land_type = case_when(
       worldcover_3cl == 1 ~ "Tree",
       worldcover_3cl == 2 ~ "Non-tree vegetation",
