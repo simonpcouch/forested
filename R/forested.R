@@ -30,15 +30,15 @@
 #'     with levels `"Tree"` and `"No tree"`.}
 #'   \item{dew_temp}{Mean annual dewpoint temperature (1991-2020), in degrees
 #'     C x 100.}
-#'   \item{annual_precip}{Mean annual precipitation (1991-2020), in mm × 100.}
-#'   \item{annual_mean_temp}{Mean annual temperature (1991-2020), in degrees C x 100.}
-#'   \item{annual_min_temp}{Mean annual minimum temperature (1991-2020), in
+#'   \item{precip_annual}{Mean annual precipitation (1991-2020), in mm × 100.}
+#'   \item{temp_annual_mean}{Mean annual temperature (1991-2020), in degrees C x 100.}
+#'   \item{temp_annual_min}{Mean annual minimum temperature (1991-2020), in
 #'     degrees C x 100.}
-#'   \item{annual_max_temp}{Mean annual maximum temperature (1991-2020), in
+#'   \item{temp_annual_max}{Mean annual maximum temperature (1991-2020), in
 #'     degrees C x 100.}
-#'   \item{january_min_temp}{Mean minimum temperature in January (1991-2020), in
+#'   \item{temp_january_min}{Mean minimum temperature in January (1991-2020), in
 #'     degrees C x 100.}
-#'   \item{min_vapor, max_vapor}{Minimum and maximum annual vapor pressure
+#'   \item{vapor_min, vapor_max}{Minimum and maximum annual vapor pressure
 #'     deficit (1991-2020), in Pa x 100.}
 #'   \item{canopy_cover}{Analytical Tree Canopy Cover, as a percent.}
 #'   \item{lon, lat}{The longitude and latitude of the center of the plot

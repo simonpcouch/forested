@@ -24,18 +24,18 @@ forested <-
     lon = lon_public,
     lat = lat_public,
     dew_temp = tdmean,
-    annual_precip = ppt,
-    annual_mean_temp = tmean,
-    annual_max_temp = tmax,
-    annual_min_temp = tmin,
-    january_min_temp = tmin_annual,
-    max_vapor = vpdmax,
-    min_vapor = vpdmin,
+    precip_annual = ppt,
+    temp_annual_mean = tmean,
+    temp_annual_max = tmax,
+    temp_annual_min = tmin,
+    temp_january_min = tmin_annual,
+    vapor_max = vpdmax,
+    vapor_min = vpdmin,
     canopy_cover = tcc
   ) %>%
-  relocate(dew_temp, .before = annual_precip) %>%
-  relocate(annual_mean_temp, .before = annual_max_temp) %>%
-  relocate(annual_max_temp, .after = annual_min_temp) %>%
-  relocate(max_vapor, .after = min_vapor)
+  relocate(dew_temp, .before = precip_annual) %>%
+  relocate(temp_annual_mean, .before = temp_annual_max) %>%
+  relocate(temp_annual_max, .after = temp_annual_min) %>%
+  relocate(vapor_max, .after = vapor_min)
 
 usethis::use_data(forested, overwrite = TRUE)

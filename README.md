@@ -45,8 +45,8 @@ forested
 #>  9 Yes       2005        52      -62        78        42 No tree           650
 #> 10 Yes       2005      2240      -67       -74        99 Tree             -563
 #> # ℹ 7,099 more rows
-#> # ℹ 11 more variables: annual_precip <dbl>, annual_mean_temp <dbl>,
-#> #   annual_min_temp <dbl>, annual_max_temp <dbl>, january_min_temp <dbl>,
-#> #   min_vapor <dbl>, max_vapor <dbl>, canopy_cover <dbl>, lon <dbl>, lat <dbl>,
+#> # ℹ 11 more variables: precip_annual <dbl>, temp_annual_mean <dbl>,
+#> #   temp_annual_min <dbl>, temp_annual_max <dbl>, temp_january_min <dbl>,
+#> #   vapor_min <dbl>, vapor_max <dbl>, canopy_cover <dbl>, lon <dbl>, lat <dbl>,
 #> #   land_type <fct>
 ```
