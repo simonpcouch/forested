@@ -40,6 +40,13 @@ forested <-
     vapor_min = vpdmin,
     canopy_cover = tcc
   ) %>%
+  mutate(
+    dew_temp = dew_temp / 100,
+    temp_annual_mean = temp_annual_mean / 100,
+    temp_annual_min = temp_annual_min / 100,
+    temp_annual_max = temp_annual_max / 100,
+    temp_january_min = temp_january_min / 100
+  ) %>%
   relocate(dew_temp, .before = precip_annual) %>%
   relocate(temp_annual_mean, .before = temp_annual_max) %>%
   relocate(temp_annual_max, .after = temp_annual_min) %>%

@@ -29,15 +29,16 @@
 #'   \item{tree_no_tree}{LANDFIRE tree/non-tree lifeform mask, as a factor
 #'     with levels `"Tree"` and `"No tree"`.}
 #'   \item{dew_temp}{Mean annual dewpoint temperature (1991-2020), in degrees
-#'     C x 100.}
+#'     Celcius.}
 #'   \item{precip_annual}{Mean annual precipitation (1991-2020), in mm × 100.}
-#'   \item{temp_annual_mean}{Mean annual temperature (1991-2020), in degrees C x 100.}
+#'   \item{temp_annual_mean}{Mean annual temperature (1991-2020), in degrees
+#'     Celcius.}
 #'   \item{temp_annual_min}{Mean annual minimum temperature (1991-2020), in
-#'     degrees C x 100.}
+#'     degrees Celcius.}
 #'   \item{temp_annual_max}{Mean annual maximum temperature (1991-2020), in
-#'     degrees C x 100.}
+#'     degrees Celcius.}
 #'   \item{temp_january_min}{Mean minimum temperature in January (1991-2020), in
-#'     degrees C x 100.}
+#'     degrees Celcius.}
 #'   \item{vapor_min, vapor_max}{Minimum and maximum annual vapor pressure
 #'     deficit (1991-2020), in Pa x 100.}
 #'   \item{canopy_cover}{Analytical Tree Canopy Cover, as a percent.}
