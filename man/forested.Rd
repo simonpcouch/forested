@@ -40,9 +40,14 @@ WorldCover global land cover product, as a factor with levels
 }
 }
 \source{
-\emph{Original source data from ...:}
+\emph{For more information on the source data, see Table 1 in:}
 
-TODO: cite raster layers
+White, Grayson W.; Yamamoto, Josh K.; Elsyad, Dinan H.;
+Schmitt, Julian F.; Korsgaard, Niels H.; Hu, Jie Kate;
+Gaines III, George C.; Frescino Tracey S.; McConville, Kelly
+S. (2024). Small area estimation of forest biomass via a two-stage
+model for continuous zero-inflated data. Forthcoming:
+arXiv 2402.03263 (ver. 2.0).
 
 \emph{For more on data definitions:}
 
