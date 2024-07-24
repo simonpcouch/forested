@@ -11,6 +11,7 @@ A small subset of plots in Washington State are sampled and assessed "on-the-gro
 Useful links:
 \itemize{
   \item \url{https://github.com/simonpcouch/forested}
+  \item \url{https://simonpcouch.github.io/forested/}
   \item Report bugs at \url{https://github.com/simonpcouch/forested/issues}
 }
 

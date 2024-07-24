@@ -28,5 +28,6 @@ RoxygenNote: 7.3.2
 Depends: 
     R (>= 2.10)
 LazyData: true
-URL: https://github.com/simonpcouch/forested
+URL: https://github.com/simonpcouch/forested, https://simonpcouch.github.io/forested/
 BugReports: https://github.com/simonpcouch/forested/issues
+Config/Needs/website: tidyverse/tidytemplate
