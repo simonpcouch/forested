@@ -1,6 +1,13 @@
 
 # forested: Data on Forest Attributes in Washington State
 
+<!-- badges: start -->
+
+[![R-CMD-check](https://github.com/simonpcouch/forested/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/simonpcouch/forested/actions/workflows/R-CMD-check.yaml)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/tune)](https://CRAN.R-project.org/package=tune)
+<!-- badges: end -->
+
 The U.S. Department of Agriculture, Forest Service, Forest Inventory and
 Analysis (FIA) Program provides all sorts of estimates of forest
 attributes for uses in research, legislation, and land management. The
