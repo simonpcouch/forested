@@ -5,7 +5,7 @@
 
 [![R-CMD-check](https://github.com/simonpcouch/forested/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/simonpcouch/forested/actions/workflows/R-CMD-check.yaml)
 [![CRAN
-status](https://www.r-pkg.org/badges/version/tune)](https://CRAN.R-project.org/package=tune)
+status](https://www.r-pkg.org/badges/version/forested)](https://CRAN.R-project.org/package=forested)
 <!-- badges: end -->
 
 The U.S. Department of Agriculture, Forest Service, Forest Inventory and
