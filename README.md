@@ -1,5 +1,5 @@
 
-# forested: Data on Forest Attributes in Washington State
+# forested <a href="https://simonpcouch.github.io/forested/"><img src="man/figures/logo.png" align="right" height="277" alt="forested website" /></a>
 
 <!-- badges: start -->
 
@@ -7,6 +7,8 @@
 [![CRAN
 status](https://www.r-pkg.org/badges/version/forested)](https://CRAN.R-project.org/package=forested)
 <!-- badges: end -->
+
+## Data on Forest Attributes in Washington State
 
 The U.S. Department of Agriculture, Forest Service, Forest Inventory and
 Analysis (FIA) Program provides all sorts of estimates of forest
