@@ -1,8 +1,11 @@
 ## R CMD check results
 
-0 errors | 0 warnings | 1 note
+0 errors | 0 warnings | 2 notes
 
-* This is a new release.
+* First note: this is a new release.
+* Second note: "Possibly misspelled words in DESCRIPTION: FIA (16:7, 16:29)."
+  The full text of this abbreviation is introduced in the preceding line and
+  the spelling is intended.
 
 ## Notes
 
