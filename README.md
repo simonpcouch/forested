@@ -25,6 +25,12 @@ forested or non-forested.
 
 ## Installation
 
+Install the most recent release of forested from CRAN with:
+
+``` r
+install.packages("forested")
+```
+
 Install the development version of forested from
 [GitHub](https://github.com/) with:
 
