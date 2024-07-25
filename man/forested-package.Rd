@@ -5,6 +5,8 @@
 \alias{forested-package}
 \title{forested: Forest Attributes in Washington State}
 \description{
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
+
 A small subset of plots in Washington State are sampled and assessed "on-the-ground" as forested or non-forested by the U.S. Department of Agriculture, Forest Service, Forest Inventory and Analysis (FIA) Program, but the FIA also has access to remotely sensed data for all land in the state. The forested package contains a data frame by the same name from which we can develop a model based on the more easily-accessible remotely sensed data to predict whether a plot is forested or non-forested.
 }
 \seealso{
@@ -27,7 +29,7 @@ Authors:
 
 Other contributors:
 \itemize{
-  \item Posit Software, PBC [funder]
+  \item Posit Software, PBC [copyright holder, funder]
 }
 
 }
