@@ -5,7 +5,7 @@
 
 [![R-CMD-check](https://github.com/simonpcouch/forested/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/simonpcouch/forested/actions/workflows/R-CMD-check.yaml)
 [![CRAN
-status](https://www.r-pkg.org/badges/version/forested)](https://CRAN.R-project.org/package=forested)
+status](https://www.r-pkg.org/badges/version/forested)](https://www.r-pkg.org/badges/version/forested)
 <!-- badges: end -->
 
 ## Data on Forest Attributes in Washington State
@@ -24,6 +24,12 @@ easily-accessible remotely sensed data to predict whether a plot is
 forested or non-forested.
 
 ## Installation
+
+Install the most recent release of forested from CRAN with:
+
+``` r
+install.packages("forested")
+```
 
 Install the development version of forested from
 [GitHub](https://github.com/) with:
