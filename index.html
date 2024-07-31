@@ -11,8 +11,8 @@
 <script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.4.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet">
 <script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Forest Attributes in Washington State">
-<meta name="description" content='A small subset of plots in Washington State are sampled and assessed "on-the-ground" as forested or non-forested by the U.S. Department of Agriculture, Forest Service, Forest Inventory and Analysis (FIA) Program, but the FIA also has access to remotely sensed data for all land in the state. The forested package contains a data frame by the same name from which we can develop a model based on the more easily-accessible remotely sensed data to predict whether a plot is forested or non-forested.'>
-<meta property="og:description" content='A small subset of plots in Washington State are sampled and assessed "on-the-ground" as forested or non-forested by the U.S. Department of Agriculture, Forest Service, Forest Inventory and Analysis (FIA) Program, but the FIA also has access to remotely sensed data for all land in the state. The forested package contains a data frame by the same name from which we can develop a model based on the more easily-accessible remotely sensed data to predict whether a plot is forested or non-forested.'>
+<meta name="description" content='A small subset of plots in Washington State are sampled and assessed "on-the-ground" as forested or non-forested by the U.S. Department of Agriculture, Forest Service, Forest Inventory and Analysis (FIA) Program, but the FIA also has access to remotely sensed data for all land in the state. The forested package contains a data frame by the same name intended for use in predictive modeling applications where the more easily-accessible remotely sensed data can be used to predict whether a plot is forested or non-forested.'>
+<meta property="og:description" content='A small subset of plots in Washington State are sampled and assessed "on-the-ground" as forested or non-forested by the U.S. Department of Agriculture, Forest Service, Forest Inventory and Analysis (FIA) Program, but the FIA also has access to remotely sensed data for all land in the state. The forested package contains a data frame by the same name intended for use in predictive modeling applications where the more easily-accessible remotely sensed data can be used to predict whether a plot is forested or non-forested.'>
 <meta property="og:image" content="https://simonpcouch.github.io/forested/logo.png">
 </head>
 <body>
@@ -23,7 +23,7 @@
 
     <a class="navbar-brand me-2" href="index.html">forested</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.0.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,6 +33,7 @@
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
 <li class="nav-item"><a class="nav-link" href="reference/index.html">Reference</a></li>
+<li class="nav-item"><a class="nav-link" href="news/index.html">Changelog</a></li>
       </ul>
 <ul class="navbar-nav">
 <li class="nav-item"><form class="form-inline" role="search">
@@ -62,15 +63,18 @@
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p>Install the development version of forested from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
+<p>Install the most recent release of forested from CRAN with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"forested"</span><span class="op">)</span></span></code></pre></div>
+<p>Install the development version of forested from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("pak")</span></span>
 <span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"simonpcouch/forested"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
 </h2>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://tibble.tidyverse.org/" class="external-link">tibble</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/simonpcouch/forested" class="external-link">forested</a></span><span class="op">)</span></span>
 <span></span>
@@ -98,6 +102,7 @@
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
+<li><a href="https://cloud.r-project.org/package=forested" class="external-link">View on CRAN</a></li>
 <li><a href="https://github.com/simonpcouch/forested/" class="external-link">Browse source code</a></li>
 <li><a href="https://github.com/simonpcouch/forested/issues" class="external-link">Report a bug</a></li>
 </ul>
@@ -125,7 +130,7 @@
 <li>Grayson White <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0003-4993-2792" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 <li>Hannah Frick <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-6049-5258" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 <li>Simon Couch <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0001-5676-5107" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
-<li>Posit Software, PBC <br><small class="roles"> Funder </small>  </li>
+<li>Posit Software, PBC <br><small class="roles"> Copyright holder, funder </small>  </li>
 </ul>
 </div>
 
@@ -133,7 +138,7 @@
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://github.com/simonpcouch/forested/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/simonpcouch/forested/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
-<li><a href="https://CRAN.R-project.org/package=forested" class="external-link"><img src="https://www.r-pkg.org/badges/version/forested" alt="CRAN status"></a></li>
+<li><a href="https://www.r-pkg.org/badges/version/forested" class="external-link"><img src="https://www.r-pkg.org/badges/version/forested" alt="CRAN status"></a></li>
 </ul>
 </div>
 
