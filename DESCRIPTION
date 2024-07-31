@@ -1,6 +1,6 @@
 Package: forested
 Title: Forest Attributes in Washington State
-Version: 0.1.0
+Version: 0.1.0.9000
 Authors@R: c(
     person("Grayson", "White", , "graysonwhite13@gmail.com", role = "aut",
            comment = c(ORCID = "0000-0003-4993-2792")),
