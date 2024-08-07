@@ -20,16 +20,16 @@ different times or averaged over multiple years.}
 \item{tree_no_tree}{LANDFIRE tree/non-tree lifeform mask, as a factor
 with levels \code{"Tree"} and \code{"No tree"}.}
 \item{dew_temp}{Mean annual dewpoint temperature (1991-2020), in degrees
-Celsius}
+Celsius.}
 \item{precip_annual}{Mean annual precipitation (1991-2020), in mm × 100.}
 \item{temp_annual_mean}{Mean annual temperature (1991-2020), in degrees
-Celsius}
+Celsius.}
 \item{temp_annual_min}{Mean annual minimum temperature (1991-2020), in
-degrees Celsius}
+degrees Celsius.}
 \item{temp_annual_max}{Mean annual maximum temperature (1991-2020), in
-degrees Celsius}
+degrees Celsius.}
 \item{temp_january_min}{Mean minimum temperature in January (1991-2020), in
-degrees Celsius}
+degrees Celsius.}
 \item{vapor_min, vapor_max}{Minimum and maximum annual vapor pressure
 deficit (1991-2020), in Pa x 100.}
 \item{canopy_cover}{Analytical Tree Canopy Cover, as a percent.}
