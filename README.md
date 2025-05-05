@@ -5,7 +5,7 @@
 
 [![R-CMD-check](https://github.com/simonpcouch/forested/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/simonpcouch/forested/actions/workflows/R-CMD-check.yaml)
 [![CRAN
-status](https://www.r-pkg.org/badges/version/forested)](https://www.r-pkg.org/badges/version/forested)
+status](https://www.r-pkg.org/badges/version/forested)](https://CRAN.R-project.org/package=forested)
 <!-- badges: end -->
 
 ## Data on Forest Attributes in Washington State
