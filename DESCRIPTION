@@ -26,7 +26,7 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Depends: 
-    R (>= 2.10)
+    R (>= 4.1)
 LazyData: true
 URL: https://github.com/simonpcouch/forested, https://simonpcouch.github.io/forested/
 BugReports: https://github.com/simonpcouch/forested/issues
