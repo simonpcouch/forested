@@ -10,3 +10,5 @@
 ^pkgdown$
 
 inst/
+^[\.]?air\.toml$
+^\.vscode$
