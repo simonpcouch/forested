@@ -2,7 +2,7 @@
 library(tidyverse)
 library(janitor)
 
-wa_plts <- read_rds("data-raw/wa_plts.rds")
+wa_plts <- read_rds("data-raw/wa/wa_plts.rds")
 
 forested <-
   wa_plts %>%

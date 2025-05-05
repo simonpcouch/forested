@@ -102,4 +102,4 @@ wa_plts <- auxdat$pltassgn %>%
   select(-FORNONSAMP) %>%
   rename(aboveground_biomass_tpa = DRYBIO_AG_TON_TPA_ADJ)
 
-saveRDS(wa_plts, file = "data-raw/wa_plts.rds")
+saveRDS(wa_plts, file = "data-raw/wa/wa_plts.rds")
