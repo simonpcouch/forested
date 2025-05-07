@@ -7,5 +7,6 @@
 .DS_Store
 .quarto
 
-data-raw/rasters/
+data-raw/wa/rasters/
+data-raw/ga/rasters/
 docs
