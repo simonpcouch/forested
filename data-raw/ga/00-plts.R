@@ -17,7 +17,7 @@ pltdat <- spGetPlots(
 )
 
 # saveRDS(pltdat, file = 'data-raw/ga/pltdat.rds')
-# pltdat <- readRDS("data-raw/ga/gapltdat.rds")
+# pltdat <- readRDS("data-raw/ga/pltdat.rds")
 
 # get average biomass (tons/acre) for each plot
 biomassdat <- datSumTree(
@@ -37,8 +37,7 @@ dfdat <- datSumTree(
   tsumvarlst = "TPA_UNADJ",
   TPA = FALSE,
   # adjtree = TRUE,
-  NAto0 = TRUE,
-  tfilter = "SPCD == 202"
+  NAto0 = TRUE
 )
 
 dougfir_count <- dfdat$treedat %>%
@@ -50,12 +49,11 @@ auxdat <- spGetAuxiliary(
   uniqueid = "CN",
   unit_layer = stunitco %>% filter(STATENM == "Georgia"),
   unitvar = "COUNTYNM",
-  rastfolder = "data-raw/rasters",
-  rastlst.cont = list.files("data-raw/rasters"),
+  rastfolder = "data-raw/ga/rasters",
+  rastlst.cont = list.files("data-raw/ga/rasters"),
   rastlst.cont.name = c(
     "elev",
     "eastness",
-    "northness",
     "roughness",
     "tree_no_tree",
     "ppt",
@@ -83,7 +81,6 @@ ga_plts <- auxdat$pltassgn %>%
     COUNTYNM,
     elev,
     eastness,
-    northness,
     roughness,
     tree_no_tree,
     ppt,
