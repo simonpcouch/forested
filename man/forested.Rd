@@ -7,7 +7,7 @@
 \alias{forested_ga}
 \title{Forest Attributes in Washington State}
 \format{
-A data frame with 19 columns:
+A data frame with:
 
 \describe{
 \item{forested}{Whether the plot is classified as "forested" or not,
@@ -40,12 +40,16 @@ with a slight perturbation.}
 \item{land_type}{Land cover type from European Space Agency (ESA) 2020
 WorldCover global land cover product, as a factor with levels
 \code{"Tree"}, \code{"Non-tree vegetation"}, and \code{"Barren"}.}
+\item{county}{The county in the state, as a factor.}
 }
 
 The number of rows varies by state. Washington has 7107 rows,
 Georgia has 10938.
 
-An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 7107 rows and 19 columns.
+The Georgia data has one less column than the Washington data as its
+\code{northness} column has been omitted due to issues with the source raster.
+
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 7107 rows and 20 columns.
 
 An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 10938 rows and 19 columns.
 }

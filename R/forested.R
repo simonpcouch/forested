@@ -14,7 +14,7 @@
 #'
 #' @format
 #'
-#' A data frame with 19 columns:
+#' A data frame with:
 #'
 #' \describe{
 #'   \item{forested}{Whether the plot is classified as "forested" or not,
@@ -47,10 +47,14 @@
 #'   \item{land_type}{Land cover type from European Space Agency (ESA) 2020
 #'     WorldCover global land cover product, as a factor with levels
 #'     `"Tree"`, `"Non-tree vegetation"`, and `"Barren"`.}
+#'   \item{county}{The county in the state, as a factor.}
 #' }
 #'
 #' The number of rows varies by state. Washington has `r nrow(forested_wa)` rows,
 #' Georgia has `r nrow(forested_ga)`.
+#'
+#' The Georgia data has one less column than the Washington data as its
+#' `northness` column has been omitted due to issues with the source raster.
 #'
 #' @section Data by state:
 #'
