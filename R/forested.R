@@ -98,7 +98,7 @@
 "forested"
 
 #' @rdname forested
-forested_wa <- NULL
+"forested_wa"
 
 #' @rdname forested
 "forested_ga"
