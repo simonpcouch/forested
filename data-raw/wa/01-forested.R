@@ -7,7 +7,7 @@ wa_plts <- read_rds("data-raw/wa/wa_plts.rds")
 forested <-
   wa_plts %>%
   as_tibble() %>%
-  select(-CN, -COUNTYNM, -aboveground_biomass_tpa, -MEASDAY, -MEASMON) %>%
+  select(-CN, -aboveground_biomass_tpa, -MEASDAY, -MEASMON) %>%
   clean_names() %>%
   mutate(
     forested = if_else(forested == 1, "Yes", "No"),
@@ -25,6 +25,7 @@ forested <-
   ) %>%
   select(-worldcover_3cl) %>%
   relocate(forested, .before = everything()) %>%
+  relocate(countynm, .after = everything()) %>%
   rename(
     year = measyear,
     elevation = elev,
@@ -38,7 +39,8 @@ forested <-
     temp_january_min = tmin_annual,
     vapor_max = vpdmax,
     vapor_min = vpdmin,
-    canopy_cover = tcc
+    canopy_cover = tcc,
+    county = countynm
   ) %>%
   mutate(
     dew_temp = dew_temp / 100,

@@ -25,6 +25,7 @@ forested_ga <-
   ) %>%
   select(-worldcover_3cl) %>%
   relocate(forested, .before = everything()) %>%
+  relocate(countynm, .after = everything()) %>%
   rename(
     year = measyear,
     elevation = elev,
@@ -38,7 +39,8 @@ forested_ga <-
     temp_january_min = tmin_annual,
     vapor_max = vpdmax,
     vapor_min = vpdmin,
-    canopy_cover = tcc
+    canopy_cover = tcc,
+    county = countynm
   ) %>%
   mutate(
     dew_temp = dew_temp / 100,
