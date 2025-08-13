@@ -1,4 +1,4 @@
-#' Forest Attributes in Washington State
+#' Forest Attributes in the U.S.
 #'
 #' @description
 #' The U.S. Department of Agriculture, Forest Service, Forest Inventory and
@@ -7,9 +7,9 @@
 #' management. The FIA uses a set of criteria to classify a plot of land as
 #' "forested" or "non-forested," and that classification is a central data
 #' point in many decision-making contexts. A small subset of plots in
-#' Washington State are sampled and assessed "on-the-ground" as forested or
+#' the U.S. are sampled and assessed "on-the-ground" as forested or
 #' non-forested, but the FIA has access to remotely sensed data for all land
-#' in the state. Practitioners can develop a model on the more easily-accessible
+#' in the country. Practitioners can develop a model on the more easily-accessible
 #' remotely sensed data to predict whether a plot is forested or non-forested.
 #'
 #' @format

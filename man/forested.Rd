@@ -5,7 +5,7 @@
 \alias{forested}
 \alias{forested_wa}
 \alias{forested_ga}
-\title{Forest Attributes in Washington State}
+\title{Forest Attributes in the U.S.}
 \format{
 A data frame with:
 
@@ -44,14 +44,14 @@ WorldCover global land cover product, as a factor with levels
 }
 
 The number of rows varies by state. Washington has 7107 rows,
-Georgia has 10938.
+Georgia has 10937.
 
 The Georgia data has one less column than the Washington data as its
 \code{northness} column has been omitted due to issues with the source raster.
 
 An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 7107 rows and 20 columns.
 
-An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 10938 rows and 19 columns.
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 10937 rows and 19 columns.
 }
 \source{
 \emph{For more information on the source data, see Table 1 in:}
@@ -91,9 +91,9 @@ estimates of forest attributes for uses in research, legislation, and land
 management. The FIA uses a set of criteria to classify a plot of land as
 "forested" or "non-forested," and that classification is a central data
 point in many decision-making contexts. A small subset of plots in
-Washington State are sampled and assessed "on-the-ground" as forested or
+the U.S. are sampled and assessed "on-the-ground" as forested or
 non-forested, but the FIA has access to remotely sensed data for all land
-in the state. Practitioners can develop a model on the more easily-accessible
+in the country. Practitioners can develop a model on the more easily-accessible
 remotely sensed data to predict whether a plot is forested or non-forested.
 }
 \section{Data by state}{
