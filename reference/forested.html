@@ -179,7 +179,7 @@ data in one state:</p><ul><li><p><code>forested</code> corresponds to <strong>Wa
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># Washington data:</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">forested</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> tibble [7,107 × 19] (S3: tbl_df/tbl/data.frame)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> tibble [7,107 × 20] (S3: tbl_df/tbl/data.frame)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ forested        : Factor w/ 2 levels "Yes","No": 1 1 2 1 1 1 1 1 1 1 ...</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ year            : num [1:7107] 2005 2005 2005 2005 2005 ...</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ elevation       : num [1:7107] 881 113 164 299 806 736 636 224 52 2240 ...</span>
@@ -199,8 +199,9 @@ data in one state:</p><ul><li><p><code>forested</code> corresponds to <strong>Wa
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ lon             : num [1:7107] -119 -123 -122 -122 -118 ...</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ lat             : num [1:7107] 48.7 47.1 48.8 45.8 48.1 ...</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ land_type       : Factor w/ 3 levels "Barren","Non-tree vegetation",..: 3 3 3 3 3 3 2 2 3 2 ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ county          : Factor w/ 39 levels "Adams","Asotin",..: 10 34 37 30 33 33 26 27 27 24 ...</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">forested</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 6 × 19</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 6 × 20</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   forested  year elevation eastness northness roughness tree_no_tree dew_temp</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> Yes       <span style="text-decoration: underline;">2</span>005       881       90        43        63 Tree             0.04</span>
@@ -209,10 +210,10 @@ data in one state:</p><ul><li><p><code>forested</code> corresponds to <strong>Wa
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> Yes       <span style="text-decoration: underline;">2</span>005       299       93        34         6 No tree          4.43</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">5</span> Yes       <span style="text-decoration: underline;">2</span>005       806       47       -<span style="color: #BB0000;">88</span>        35 Tree             1.06</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">6</span> Yes       <span style="text-decoration: underline;">2</span>005       736      -<span style="color: #BB0000;">27</span>       -<span style="color: #BB0000;">96</span>        53 Tree             1.35</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 11 more variables: precip_annual &lt;dbl&gt;, temp_annual_mean &lt;dbl&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 12 more variables: precip_annual &lt;dbl&gt;, temp_annual_mean &lt;dbl&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   temp_annual_min &lt;dbl&gt;, temp_annual_max &lt;dbl&gt;, temp_january_min &lt;dbl&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   vapor_min &lt;dbl&gt;, vapor_max &lt;dbl&gt;, canopy_cover &lt;dbl&gt;, lon &lt;dbl&gt;, lat &lt;dbl&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   land_type &lt;fct&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   land_type &lt;fct&gt;, county &lt;fct&gt;</span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/all.equal.html" class="external-link">all.equal</a></span><span class="op">(</span><span class="va">forested</span>, <span class="va">forested_wa</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] TRUE</span>
 <span class="r-in"><span></span></span>
@@ -221,7 +222,6 @@ data in one state:</p><ul><li><p><code>forested</code> corresponds to <strong>Wa
 <span class="r-out co"><span class="r-pr">#&gt;</span> tibble [10,938 × 19] (S3: tbl_df/tbl/data.frame)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ forested        : Factor w/ 2 levels "Yes","No": 1 1 1 1 1 1 1 1 1 1 ...</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ year            : num [1:10938] 2007 2007 2006 2007 2006 ...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  $ countynm        : Factor w/ 159 levels "Appling","Atkinson",..: 51 80 16 26 28 31 34 26 26 96 ...</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ elevation       : num [1:10938] 14 66 59 116 283 250 58 140 118 217 ...</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ eastness        : num [1:10938] 0 -53 -82 -78 63 63 31 56 72 -46 ...</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ roughness       : num [1:10938] 0 10 6 20 13 14 1 11 17 13 ...</span>
@@ -238,20 +238,21 @@ data in one state:</p><ul><li><p><code>forested</code> corresponds to <strong>Wa
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ lon             : num [1:10938] -81.4 -82.6 -81.7 -84.9 -84.4 ...</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ lat             : num [1:10938] 32.3 31.7 32.4 32.4 34.1 ...</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ land_type       : Factor w/ 3 levels "Barren","Non-tree vegetation",..: 3 3 2 3 3 3 3 2 3 3 ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ county          : Factor w/ 159 levels "Appling","Atkinson",..: 51 80 16 26 28 31 34 26 26 96 ...</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">forested_ga</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 6 × 19</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   forested  year countynm     elevation eastness roughness tree_no_tree dew_temp</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> Yes       <span style="text-decoration: underline;">2</span>007 Effingham           14        0         0 No tree          13.9</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> Yes       <span style="text-decoration: underline;">2</span>007 Jeff Davis          66      -<span style="color: #BB0000;">53</span>        10 Tree             13.8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> Yes       <span style="text-decoration: underline;">2</span>006 Bulloch             59      -<span style="color: #BB0000;">82</span>         6 No tree          13.5</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> Yes       <span style="text-decoration: underline;">2</span>007 Chattahooch…       116      -<span style="color: #BB0000;">78</span>        20 Tree             12.3</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">5</span> Yes       <span style="text-decoration: underline;">2</span>006 Cherokee           283       63        13 Tree             10.0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">6</span> Yes       <span style="text-decoration: underline;">2</span>007 Clayton            250       63        14 Tree             10.8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 11 more variables: precip_annual &lt;dbl&gt;, temp_annual_mean &lt;dbl&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   forested  year elevation eastness roughness tree_no_tree dew_temp</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> Yes       <span style="text-decoration: underline;">2</span>007        14        0         0 No tree          13.9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> Yes       <span style="text-decoration: underline;">2</span>007        66      -<span style="color: #BB0000;">53</span>        10 Tree             13.8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> Yes       <span style="text-decoration: underline;">2</span>006        59      -<span style="color: #BB0000;">82</span>         6 No tree          13.5</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> Yes       <span style="text-decoration: underline;">2</span>007       116      -<span style="color: #BB0000;">78</span>        20 Tree             12.3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">5</span> Yes       <span style="text-decoration: underline;">2</span>006       283       63        13 Tree             10.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">6</span> Yes       <span style="text-decoration: underline;">2</span>007       250       63        14 Tree             10.8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 12 more variables: precip_annual &lt;dbl&gt;, temp_annual_mean &lt;dbl&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   temp_annual_min &lt;dbl&gt;, temp_annual_max &lt;dbl&gt;, temp_january_min &lt;dbl&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   vapor_min &lt;dbl&gt;, vapor_max &lt;dbl&gt;, canopy_cover &lt;dbl&gt;, lon &lt;dbl&gt;, lat &lt;dbl&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   land_type &lt;fct&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   land_type &lt;fct&gt;, county &lt;fct&gt;</span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
