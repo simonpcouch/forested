@@ -14,7 +14,7 @@
 #'
 #' @format
 #'
-#' A data frame with 7,107 rows and 19 columns:
+#' A data frame with 19 columns:
 #'
 #' \describe{
 #'   \item{forested}{Whether the plot is classified as "forested" or not,
@@ -49,6 +49,17 @@
 #'     `"Tree"`, `"Non-tree vegetation"`, and `"Barren"`.}
 #' }
 #'
+#' The number of rows varies by state. Washington has `r nrow(forested_wa)` rows,
+#' Georgia has `r nrow(forested_ga)`.
+#'
+#' @section Data by state:
+#'
+#' The forested package provides a few data sets, each corresponding to forest
+#' data in one state:
+#'
+#' * `forested` corresponds to **Washington** state and is aliased as `forested_wa`.
+#' * `forested_ga` corresponds to **Georgia**.
+#'
 #' @source
 #' _For more information on the source data, see Table 1 in:_
 #'
@@ -73,10 +84,21 @@
 #' White, Grayson W. (2023). FIESTA: A forest inventory estimation and analysis
 #' R package. Ecography 2023: e06428 (ver. 1.0).
 #'
+#' @name forested
+#' @aliases forested_wa
 #' @examples
-#'
+#' # Washington data:
 #' str(forested)
-#'
 #' head(forested)
+#' all.equal(forested, forested_wa)
 #'
+#' # Georgia data:
+#' str(forested_ga)
+#' head(forested_ga)
 "forested"
+
+#' @rdname forested
+forested_wa <- NULL
+
+#' @rdname forested
+"forested_ga"

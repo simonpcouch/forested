@@ -3,9 +3,11 @@
 \docType{data}
 \name{forested}
 \alias{forested}
+\alias{forested_wa}
+\alias{forested_ga}
 \title{Forest Attributes in Washington State}
 \format{
-A data frame with 7,107 rows and 19 columns:
+A data frame with 19 columns:
 
 \describe{
 \item{forested}{Whether the plot is classified as "forested" or not,
@@ -39,6 +41,13 @@ with a slight perturbation.}
 WorldCover global land cover product, as a factor with levels
 \code{"Tree"}, \code{"Non-tree vegetation"}, and \code{"Barren"}.}
 }
+
+The number of rows varies by state. Washington has 7107 rows,
+Georgia has 10938.
+
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 7107 rows and 19 columns.
+
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 10938 rows and 19 columns.
 }
 \source{
 \emph{For more information on the source data, see Table 1 in:}
@@ -66,6 +75,10 @@ R package. Ecography 2023: e06428 (ver. 1.0).
 }
 \usage{
 forested
+
+forested_wa
+
+forested_ga
 }
 \description{
 The U.S. Department of Agriculture, Forest Service, Forest Inventory and
@@ -79,11 +92,25 @@ non-forested, but the FIA has access to remotely sensed data for all land
 in the state. Practitioners can develop a model on the more easily-accessible
 remotely sensed data to predict whether a plot is forested or non-forested.
 }
+\section{Data by state}{
+
+
+The forested package provides a few data sets, each corresponding to forest
+data in one state:
+\itemize{
+\item \code{forested} corresponds to \strong{Washington} state and is aliased as \code{forested_wa}.
+\item \code{forested_ga} corresponds to \strong{Georgia}.
+}
+}
+
 \examples{
-
+# Washington data:
 str(forested)
-
 head(forested)
+all.equal(forested, forested_wa)
 
+# Georgia data:
+str(forested_ga)
+head(forested_ga)
 }
 \keyword{datasets}
