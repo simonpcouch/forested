@@ -54,3 +54,6 @@ forested <-
   filter(!is.na(land_type))
 
 usethis::use_data(forested, overwrite = TRUE)
+
+forested_wa <- forested
+usethis::use_data(forested_wa, overwrite = TRUE)

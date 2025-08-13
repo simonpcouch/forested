@@ -1,1 +1,0 @@
-forested_wa <- forested
