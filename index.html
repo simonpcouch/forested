@@ -5,14 +5,14 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Forest Attributes in Washington State • forested</title>
+<title>Forest Attributes in U.S. States • forested</title>
 <script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
 <script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
-<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Forest Attributes in Washington State">
-<meta name="description" content='A small subset of plots in Washington State are sampled and assessed "on-the-ground" as forested or non-forested by the U.S. Department of Agriculture, Forest Service, Forest Inventory and Analysis (FIA) Program, but the FIA also has access to remotely sensed data for all land in the state. The forested package contains a data frame by the same name intended for use in predictive modeling applications where the more easily-accessible remotely sensed data can be used to predict whether a plot is forested or non-forested.'>
-<meta property="og:description" content='A small subset of plots in Washington State are sampled and assessed "on-the-ground" as forested or non-forested by the U.S. Department of Agriculture, Forest Service, Forest Inventory and Analysis (FIA) Program, but the FIA also has access to remotely sensed data for all land in the state. The forested package contains a data frame by the same name intended for use in predictive modeling applications where the more easily-accessible remotely sensed data can be used to predict whether a plot is forested or non-forested.'>
+<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Forest Attributes in U.S. States">
+<meta name="description" content='A small subset of plots throughout the U.S. are sampled and assessed "on-the-ground" as forested or non-forested by the U.S. Department of Agriculture, Forest Service, Forest Inventory and Analysis (FIA) Program, but the FIA also has access to remotely sensed data for all land in the country. The forested package contains data frames intended for use in predictive modeling applications where the more easily-accessible remotely sensed data can be used to predict whether a plot is forested or non-forested. Currently, the package provides data for Washington and Georgia.'>
+<meta property="og:description" content='A small subset of plots throughout the U.S. are sampled and assessed "on-the-ground" as forested or non-forested by the U.S. Department of Agriculture, Forest Service, Forest Inventory and Analysis (FIA) Program, but the FIA also has access to remotely sensed data for all land in the country. The forested package contains data frames intended for use in predictive modeling applications where the more easily-accessible remotely sensed data can be used to predict whether a plot is forested or non-forested. Currently, the package provides data for Washington and Georgia.'>
 <meta property="og:image" content="https://simonpcouch.github.io/forested/logo.png">
 </head>
 <body>
@@ -56,9 +56,9 @@
 <!-- badges: start -->
 
 <div class="section level2">
-<h2 id="data-on-forest-attributes-in-washington-state">Data on Forest Attributes in Washington State<a class="anchor" aria-label="anchor" href="#data-on-forest-attributes-in-washington-state"></a>
+<h2 id="data-on-forest-attributes-in-us-states">Data on Forest Attributes in U.S. States<a class="anchor" aria-label="anchor" href="#data-on-forest-attributes-in-us-states"></a>
 </h2>
-<p>The U.S. Department of Agriculture, Forest Service, Forest Inventory and Analysis (FIA) Program provides all sorts of estimates of forest attributes for uses in research, legislation, and land management. The FIA uses a set of criteria to classify a plot of land as “forested” or “non-forested,” and that classification is a central data point in many decision-making contexts. A small subset of plots in Washington State are sampled and assessed “on-the-ground” as forested or non-forested, but the FIA has access to remotely sensed data for all land in the state. <strong>forested is an R data package</strong> containing a data frame, <code>forested</code>, from which we can develop a model on the more easily-accessible remotely sensed data to predict whether a plot is forested or non-forested.</p>
+<p>The U.S. Department of Agriculture, Forest Service, Forest Inventory and Analysis (FIA) Program provides all sorts of estimates of forest attributes for uses in research, legislation, and land management. The FIA uses a set of criteria to classify a plot of land as “forested” or “non-forested,” and that classification is a central data point in many decision-making contexts. A small subset of plots in country are sampled and assessed “on-the-ground” as forested or non-forested, but the FIA has access to remotely sensed data for all land in the country. <strong>forested is an R data package</strong> containing a data frame, <code>forested</code>, from which we can develop a model on the more easily-accessible remotely sensed data to predict whether a plot is forested or non-forested.</p>
 </div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
@@ -79,7 +79,7 @@
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/simonpcouch/forested" class="external-link">forested</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">forested</span></span>
-<span><span class="co">#&gt; # A tibble: 7,107 × 19</span></span>
+<span><span class="co">#&gt; # A tibble: 7,107 × 20</span></span>
 <span><span class="co">#&gt;    forested  year elevation eastness northness roughness tree_no_tree dew_temp</span></span>
 <span><span class="co">#&gt;    &lt;fct&gt;    &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt; &lt;fct&gt;           &lt;dbl&gt;</span></span>
 <span><span class="co">#&gt;  1 Yes       2005       881       90        43        63 Tree             0.04</span></span>
@@ -93,10 +93,10 @@
 <span><span class="co">#&gt;  9 Yes       2005        52      -62        78        42 Tree             6.5 </span></span>
 <span><span class="co">#&gt; 10 Yes       2005      2240      -67       -74        99 No tree         -5.63</span></span>
 <span><span class="co">#&gt; # ℹ 7,097 more rows</span></span>
-<span><span class="co">#&gt; # ℹ 11 more variables: precip_annual &lt;dbl&gt;, temp_annual_mean &lt;dbl&gt;,</span></span>
+<span><span class="co">#&gt; # ℹ 12 more variables: precip_annual &lt;dbl&gt;, temp_annual_mean &lt;dbl&gt;,</span></span>
 <span><span class="co">#&gt; #   temp_annual_min &lt;dbl&gt;, temp_annual_max &lt;dbl&gt;, temp_january_min &lt;dbl&gt;,</span></span>
 <span><span class="co">#&gt; #   vapor_min &lt;dbl&gt;, vapor_max &lt;dbl&gt;, canopy_cover &lt;dbl&gt;, lon &lt;dbl&gt;, lat &lt;dbl&gt;,</span></span>
-<span><span class="co">#&gt; #   land_type &lt;fct&gt;</span></span></code></pre></div>
+<span><span class="co">#&gt; #   land_type &lt;fct&gt;, county &lt;fct&gt;</span></span></code></pre></div>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">
