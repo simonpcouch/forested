@@ -74,7 +74,7 @@ remotely sensed data to predict whether a plot is forested or non-forested.</p>
 
     <div class="section level2">
     <h2 id="format">Format<a class="anchor" aria-label="anchor" href="#format"></a></h2>
-    <p>A data frame with 19 columns:</p>
+    <p>A data frame with:</p>
 <dl><dt>forested</dt>
 <dd><p>Whether the plot is classified as "forested" or not,
 as a factor with levels <code>"Yes"</code> and <code>"No"</code>.</p></dd>
@@ -139,10 +139,15 @@ with a slight perturbation.</p></dd>
 WorldCover global land cover product, as a factor with levels
 <code>"Tree"</code>, <code>"Non-tree vegetation"</code>, and <code>"Barren"</code>.</p></dd>
 
+<dt>county</dt>
+<dd><p>The county in the state, as a factor.</p></dd>
+
 
 </dl><p>The number of rows varies by state. Washington has 7107 rows,
 Georgia has 10938.</p>
-<p>An object of class <code>tbl_df</code> (inherits from <code>tbl</code>, <code>data.frame</code>) with 7107 rows and 19 columns.</p>
+<p>The Georgia data has one less column than the Washington data as its
+<code>northness</code> column has been omitted due to issues with the source raster.</p>
+<p>An object of class <code>tbl_df</code> (inherits from <code>tbl</code>, <code>data.frame</code>) with 7107 rows and 20 columns.</p>
 <p>An object of class <code>tbl_df</code> (inherits from <code>tbl</code>, <code>data.frame</code>) with 10938 rows and 19 columns.</p>
     </div>
     <div class="section level2">
