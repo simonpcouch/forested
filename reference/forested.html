@@ -65,12 +65,16 @@ remotely sensed data to predict whether a plot is forested or non-forested.</p>
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="va">forested</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="va">forested</span></span>
+<span></span>
+<span><span class="va">forested_wa</span></span>
+<span></span>
+<span><span class="va">forested_ga</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
     <h2 id="format">Format<a class="anchor" aria-label="anchor" href="#format"></a></h2>
-    <p>A data frame with 7,107 rows and 19 columns:</p>
+    <p>A data frame with 19 columns:</p>
 <dl><dt>forested</dt>
 <dd><p>Whether the plot is classified as "forested" or not,
 as a factor with levels <code>"Yes"</code> and <code>"No"</code>.</p></dd>
@@ -136,7 +140,11 @@ WorldCover global land cover product, as a factor with levels
 <code>"Tree"</code>, <code>"Non-tree vegetation"</code>, and <code>"Barren"</code>.</p></dd>
 
 
-</dl></div>
+</dl><p>The number of rows varies by state. Washington has 7107 rows,
+Georgia has 10938.</p>
+<p>An object of class <code>tbl_df</code> (inherits from <code>tbl</code>, <code>data.frame</code>) with 7107 rows and 19 columns.</p>
+<p>An object of class <code>tbl_df</code> (inherits from <code>tbl</code>, <code>data.frame</code>) with 10938 rows and 19 columns.</p>
+    </div>
     <div class="section level2">
     <h2 id="source">Source<a class="anchor" aria-label="anchor" href="#source"></a></h2>
     <p><em>For more information on the source data, see Table 1 in:</em></p>
@@ -157,10 +165,19 @@ Forthcoming: arXiv 2306.15607 (ver. 2.0.</p>
 White, Grayson W. (2023). FIESTA: A forest inventory estimation and analysis
 R package. Ecography 2023: e06428 (ver. 1.0).</p>
     </div>
+    <div class="section level2">
+    <h2 id="data-by-state">Data by state<a class="anchor" aria-label="anchor" href="#data-by-state"></a></h2>
+
+
+
+<p>The forested package provides a few data sets, each corresponding to forest
+data in one state:</p><ul><li><p><code>forested</code> corresponds to <strong>Washington</strong> state and is aliased as <code>forested_wa</code>.</p></li>
+<li><p><code>forested_ga</code> corresponds to <strong>Georgia</strong>.</p></li>
+</ul></div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># Washington data:</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">forested</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> tibble [7,107 × 19] (S3: tbl_df/tbl/data.frame)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ forested        : Factor w/ 2 levels "Yes","No": 1 1 2 1 1 1 1 1 1 1 ...</span>
@@ -182,7 +199,6 @@ R package. Ecography 2023: e06428 (ver. 1.0).</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ lon             : num [1:7107] -119 -123 -122 -122 -118 ...</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ lat             : num [1:7107] 48.7 47.1 48.8 45.8 48.1 ...</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ land_type       : Factor w/ 3 levels "Barren","Non-tree vegetation",..: 3 3 3 3 3 3 2 2 3 2 ...</span>
-<span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">forested</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 6 × 19</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   forested  year elevation eastness northness roughness tree_no_tree dew_temp</span>
@@ -197,7 +213,45 @@ R package. Ecography 2023: e06428 (ver. 1.0).</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   temp_annual_min &lt;dbl&gt;, temp_annual_max &lt;dbl&gt;, temp_january_min &lt;dbl&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   vapor_min &lt;dbl&gt;, vapor_max &lt;dbl&gt;, canopy_cover &lt;dbl&gt;, lon &lt;dbl&gt;, lat &lt;dbl&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   land_type &lt;fct&gt;</span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/all.equal.html" class="external-link">all.equal</a></span><span class="op">(</span><span class="va">forested</span>, <span class="va">forested_wa</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] TRUE</span>
 <span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># Georgia data:</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">forested_ga</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> tibble [10,938 × 19] (S3: tbl_df/tbl/data.frame)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ forested        : Factor w/ 2 levels "Yes","No": 1 1 1 1 1 1 1 1 1 1 ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ year            : num [1:10938] 2007 2007 2006 2007 2006 ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ countynm        : Factor w/ 159 levels "Appling","Atkinson",..: 51 80 16 26 28 31 34 26 26 96 ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ elevation       : num [1:10938] 14 66 59 116 283 250 58 140 118 217 ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ eastness        : num [1:10938] 0 -53 -82 -78 63 63 31 56 72 -46 ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ roughness       : num [1:10938] 0 10 6 20 13 14 1 11 17 13 ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ tree_no_tree    : Factor w/ 2 levels "Tree","No tree": 2 1 2 1 1 1 2 1 1 1 ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ dew_temp        : num [1:10938] 13.9 13.8 13.5 12.3 10 ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ precip_annual   : num [1:10938] 1255 1227 1211 1304 1354 ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ temp_annual_mean: num [1:10938] 19.2 19.1 18.8 18.3 16 ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ temp_annual_min : num [1:10938] 3.4 3.23 2.71 1.98 -0.43 0.19 3.41 2 1.98 2.68 ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ temp_annual_max : num [1:10938] 25.4 25.4 25.1 24.7 21.9 ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ temp_january_min: num [1:10938] 13.1 12.8 12.6 11.8 10 ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ vapor_min       : num [1:10938] 61 66 57 92 90 61 59 100 98 100 ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ vapor_max       : num [1:10938] 1749 1849 1785 1844 1545 ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ canopy_cover    : num [1:10938] 22 82 9 66 27 79 30 58 75 90 ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ lon             : num [1:10938] -81.4 -82.6 -81.7 -84.9 -84.4 ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ lat             : num [1:10938] 32.3 31.7 32.4 32.4 34.1 ...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  $ land_type       : Factor w/ 3 levels "Barren","Non-tree vegetation",..: 3 3 2 3 3 3 3 2 3 3 ...</span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">forested_ga</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 6 × 19</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   forested  year countynm     elevation eastness roughness tree_no_tree dew_temp</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> Yes       <span style="text-decoration: underline;">2</span>007 Effingham           14        0         0 No tree          13.9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> Yes       <span style="text-decoration: underline;">2</span>007 Jeff Davis          66      -<span style="color: #BB0000;">53</span>        10 Tree             13.8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> Yes       <span style="text-decoration: underline;">2</span>006 Bulloch             59      -<span style="color: #BB0000;">82</span>         6 No tree          13.5</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> Yes       <span style="text-decoration: underline;">2</span>007 Chattahooch…       116      -<span style="color: #BB0000;">78</span>        20 Tree             12.3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">5</span> Yes       <span style="text-decoration: underline;">2</span>006 Cherokee           283       63        13 Tree             10.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">6</span> Yes       <span style="text-decoration: underline;">2</span>007 Clayton            250       63        14 Tree             10.8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 11 more variables: precip_annual &lt;dbl&gt;, temp_annual_mean &lt;dbl&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   temp_annual_min &lt;dbl&gt;, temp_annual_max &lt;dbl&gt;, temp_january_min &lt;dbl&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   vapor_min &lt;dbl&gt;, vapor_max &lt;dbl&gt;, canopy_cover &lt;dbl&gt;, lon &lt;dbl&gt;, lat &lt;dbl&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   land_type &lt;fct&gt;</span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
@@ -209,7 +263,7 @@ R package. Ecography 2023: e06428 (ver. 1.0).</p>
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.2.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.3.</p>
 </div>
 
     </footer></div>
