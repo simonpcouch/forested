@@ -1,4 +1,4 @@
-# forested (development version)
+# forested 0.2.0
 
 * The first version of the package just had data from Washington, called
   `forested`. The second release of the package also includes data from Georgia.

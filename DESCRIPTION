@@ -1,6 +1,6 @@
 Package: forested
 Title: Forest Attributes in U.S. States
-Version: 0.1.0.9000
+Version: 0.2.0
 Authors@R: c(
     person("Grayson", "White", , "graysonwhite13@gmail.com", role = "aut",
            comment = c(ORCID = "0000-0003-4993-2792")),
