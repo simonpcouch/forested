@@ -59,17 +59,18 @@ An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) w
 White, Grayson W.; Yamamoto, Josh K.; Elsyad, Dinan H.;
 Schmitt, Julian F.; Korsgaard, Niels H.; Hu, Jie Kate;
 Gaines III, George C.; Frescino Tracey S.; McConville, Kelly
-S. (2024). Small area estimation of forest biomass via a two-stage
-model for continuous zero-inflated data. Forthcoming:
-arXiv 2402.03263 (ver. 2.0).
+S. (2025). Small area estimation of forest biomass via a two-stage
+model for continuous zero-inflated data. Canadian Journal of
+Forest Research: 55: 1-19. (ver. 1.0).
 
 \emph{For more on data definitions:}
 
-Wieczorek, Jerzy A.; White, Grayson W.; Cody, Zachariah W.; Tan, Emily X.;
+White, Grayson W.; Wieczorek, Jerzy A.; Cody, Zachariah W.; Tan, Emily X.;
 Chistolini, Jacqueline O.; McConville, Kelly S.; Frescino, Tracey S.;
-Moisen, Gretchen G. (2024). Assessing small area estimates via
-artificial populations from KBAABB: a kNN-based approximation to ABB.
-Forthcoming: arXiv 2306.15607 (ver. 2.0.
+Moisen, Gretchen G. (2025). A method for empirically assessing small
+area estimators via bootstrap-weighted k-nearest-neighbor artificial
+populations, with applications to forest inventory. Forestry: An
+International Journal of Forest Research: cpaf071 (ver. 1.0).
 
 \emph{Source data pre-preprocessed using the FIESTA R Package (GPL-3):}
 
