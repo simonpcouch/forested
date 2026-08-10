@@ -1,3 +1,9 @@
+# forested (development version)
+
+* Breaking change: `temp_annual_min` and `temp_january_min` now contain annual
+  and January minimum temperatures, respectively, in all datasets. Previously,
+  the values of these two variables were reversed (#22).
+
 # forested 0.2.0
 
 * The first version of the package just had data from Washington, called
