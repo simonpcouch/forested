@@ -1,5 +1,12 @@
 # Changelog
 
+## forested (development version)
+
+- Breaking change: `temp_annual_min` and `temp_january_min` now contain
+  annual and January minimum temperatures, respectively, in all
+  datasets. Previously, the values of these two variables were reversed
+  ([\#22](https://github.com/simonpcouch/forested/issues/22)).
+
 ## forested 0.2.0
 
 CRAN release: 2025-08-19

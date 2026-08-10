@@ -19,6 +19,7 @@ sensed data to predict whether a plot is forested or non-forested.
 Install the most recent release of forested from CRAN with:
 
 ``` r
+
 install.packages("forested")
 ```
 
@@ -26,6 +27,7 @@ Install the development version of forested from
 [GitHub](https://github.com/) with:
 
 ``` r
+
 # install.packages("pak")
 pak::pak("simonpcouch/forested")
 ```
@@ -33,6 +35,7 @@ pak::pak("simonpcouch/forested")
 ## Example
 
 ``` r
+
 library(tibble)
 library(forested)
 
